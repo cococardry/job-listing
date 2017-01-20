@@ -61,6 +61,32 @@
   color: #FF6F00;//鼠标放置在链接上的文字颜色
   background-color: transparent;//鼠标放置在链接上的背景颜色，这里设为透明
 }
+.caption {
+  margin: 30px;
+  text-align: center;
+  top: 20px;
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    margin-top: 60px;
+}
+
+.custab{
+  border: 1px solid #ccc;
+
+  padding: 5px;
+  margin: 5% 0;
+  box-shadow: 3px 3px 2px #ccc;
+
+  transition: 0.5s;
+}
+
+.custab:hover{
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
+}
 @media (min-width: 768px) {
     .navbar {
         border-radius: 0;//圆角为0
