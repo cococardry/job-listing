@@ -17,3 +17,52 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+.jumbotron {
+  background-image:url('http://static.yyq.cn/static/uploads/news_content/d/17/d170fb4059cc864960fe5ef2e4305421.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 110px;
+
+}
+
+.title {
+  font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 80px;
+}
+
+.slogan {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  top: 12px;
+}
+
+.lead {
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+}
+
+.navbar-default {
+    background-color: #212121;//背景颜色
+    border-color: #212121;//边框色
+    margin-bottom: 0;//底部 margin 不撑开距离
+}
+.navbar-default .navbar-brand {
+   color: #EF6C00;//字体颜色
+   padding: 10px 15px;//上下10px,左右15px
+   line-height: 30px;//文字行高
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FF6F00;//鼠标放置在链接上的文字颜色
+  background-color: transparent;//鼠标放置在链接上的背景颜色，这里设为透明
+}
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;//圆角为0
+    }
+}
