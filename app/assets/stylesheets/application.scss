@@ -27,7 +27,9 @@
 
 .title {
   font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
-  text-align: center;
+  color: black;
+  text-align: right;
+  padding-right: 10%;
   margin-top: 200px;
   margin-bottom: 80px;
 }
@@ -35,14 +37,17 @@
 .slogan {
   margin-top: 10px;
   margin-bottom: 50px;
-  text-align: center;
-  color: white;
+  text-align: right;
+  padding-right: 10%;
+  color: #EEEEEE;
   top: 12px;
+  font-weight:600;
 }
 
 .lead {
   margin-bottom: 60px;
-  text-align: center;
+  text-align: right;
+  padding-right: 10%;
   color: white;
 }
 
