@@ -17,16 +17,25 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
-.jumbotron {
-  background-image:url('http://static.yyq.cn/static/uploads/news_content/d/17/d170fb4059cc864960fe5ef2e4305421.gif');
-  background-repeat: no-repeat;
-  background-size:cover;
-  padding-bottom: 110px;
+// .jumbotron {
+//   background-image:url('http://static.yyq.cn/static/uploads/news_content/d/17/d170fb4059cc864960fe5ef2e4305421.gif');
+//   background-repeat: no-repeat;
+//   background-size:cover;
+//   padding-bottom: 110px;
+//
+// }
 
-}
+// .container-fluid div{
+//   background-color: transparent
+// }
 .container-fluid .jumbotron{
   padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
   margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  border-radius: 0;//圆角为0
+}
+.container-fluid{
+
+  margin: 0 -15px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
   border-radius: 0;//圆角为0
 }
 .title {
@@ -97,9 +106,9 @@
 }
 
 .caption {
-  margin: 30px;
+  margin-top: 10px;
   text-align: center;
-  top: 20px;
+  // top: 20px;
 }
 
 .thumbnail {
@@ -139,6 +148,40 @@
     border-radius: 3px;//btn圆角
     width: 180px;//这里用指定宽度把btn拉得更长
 }
+.transparent{
+  background-color: transparent;
+}
+.inline{
+  display: inline;
+  padding:0;
+}
+#leftDiv
+{
+  float:left;
+  width:34%;
+}
+#middleDiv
+{
+  float:left;
+  width:33%;
+}
+#rightDiv
+{
+  float:right;
+  width:33%;
+  padding:0px;
+}
+#index-text{
+  color:#EF6C00;
+  margin-top:-170px;
+  width:208%;
+  text-align:center;
+  font-weight:bolder;
+  font-size:1.8em;
+}
+// img:hover{
+//   transform:scale(1.2);
+// }
 @media (min-width: 768px) {
     .navbar {
         border-radius: 0;//圆角为0
