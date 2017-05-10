@@ -26,10 +26,6 @@ p strong{
   border-color:#f1f1f1;
 }
 </style>
-<<<<<<< HEAD
-<div class="col-md-12" style="margin-left:-14px;padding-bottom:50px;">
-  <div id="leftDiv">
-=======
 <div class="row">
 <div class="col-md-12" style="padding-bottom:50px;">
   <img src="/images/index.png" width="100%;"/>
@@ -37,7 +33,6 @@ p strong{
     <a class="btn btn-lg btn-danger" href="/jobs">即刻沸腾</a>
   </div>
   <!-- <div id="leftDiv">
->>>>>>> step10
     <a href="/jobs"><img src="https://ww2.sinaimg.cn/large/006y8lVagy1fc551qhpwkj31kw23vhdu.jpg" style="width:100%;"></a>
     <a href="/jobs"><img src="https://ww4.sinaimg.cn/large/006y8lVagy1fc553heur2j31kw1131l1.jpg" style="width:100%;"></a>
   </div>
@@ -58,26 +53,44 @@ p strong{
 </div>
 
 
-<<<<<<< HEAD
-  <div class="container text-center">
-    <h1 style="font-family:futura;">We love music!</h3>
-=======
   <div class="text-center">
     <h2 style="font-family:futura;">We love music!</h3>
->>>>>>> step10
     <br>
     <div class="row">
       <div class="col-sm-4">
         <p><strong>Singer: Coco</strong></p><br>
         <img class="img-circle person" src="/images/me.jpg" alt="Random Name">
+          <p class="say">
+            这里给了我一个最彻底释放的平台，<br />
+            唱出自我，实现梦想。
+          </p>
       </div>
       <div class="col-sm-4">
         <p><strong>Guitar Player: Xuan</strong></p><br>
         <img class="img-circle person" src="/images/me2.JPG" alt="Random Name">
+        <p class="say">
+          在X's Music Studio享受最纯粹的音乐时光。
+        </p>
       </div>
       <div class="col-sm-4">
         <p><strong>Drummer: Leo</strong></p><br>
         <img class="img-circle person" src="/images/me1.JPG" alt="Random Name">
+        <p class="say">
+          有一群合拍的人在一起，才能尽情玩耍。<br />来对了就是这里，come on！。
+        </p>
       </div>
     </div>
   </div>
+<script>
+    $(document).ready(function(){
+    $(".navbar-fixed-top").css("background-color", "transparent");
+    $(".navbar-fixed-top").css("border-color", "transparent");
+    $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+    });
+
+    });
+</script>

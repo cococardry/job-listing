@@ -36,10 +36,21 @@
 html{
   overflow-x: hidden;
 }
+.navbar-header{
+  font-family: futura;
+}
+.navbar-fixed-top.scrolled{
+  background-color: #212121!important;
+  transition: background-color 700ms linear;
+}
 .lead{
   position:absolute;
   margin-left:58%;
   margin-top:-150px;
+}
+.say{
+  padding-top:15px;
+  color: grey;
 }
 .container-fluid{
 
