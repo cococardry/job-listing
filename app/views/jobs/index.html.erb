@@ -1,5 +1,5 @@
 <style>
-html,
+
 body {
 	height: 100%;
 }
@@ -67,10 +67,12 @@ tbody {
 		}
 	}
 }
-
+.btn:active{
+	/*box-shadow: none;*/
+}
 </style>
 
-<div class="dropdown clearfix" style="float:left;margin:80px 20px 10px 140px;">
+<div class="dropdown clearfix" style="float:left;margin:30px 20px 10px 140px;">
     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       排序
         <span class="caret"></span>
@@ -89,13 +91,13 @@ tbody {
         </li>
     </ul>
 </div>
-<div style="margin-top:80px;">
+<div style="margin-top:30px;">
   <%=search_form_for @search do |f|%>
   <%=f.label "职位搜索："%>
   <%=f.search_field :title_cont%>
-  <span class="input-group-btn" style="display:inline;">
-            <button type="submit" class="btn btn-default" style="background-color:transparent;border-color:transparent;">
-              <span class="glyphicon glyphicon-search" ></span>
+  <span style="display:inline;">
+            <button type="submit" class="btn" style="outline:none;background-color:transparent;">
+              <span class="glyphicon glyphicon-search"></span>
             </button>
   </span>
   <%end%>
@@ -132,42 +134,3 @@ tbody {
 		</tbody>
 	</table>
 </div>
-
-
-
-
-<!--
-
-<table class="table table-boldered">
-  <thead>
-          <tr>
-              <td></td>
-              <td>薪资下限</td>
-              <td>薪资上限</td>
-              <td>刊登时间</td>
-          </tr>
-
-      </thead>
-  <tbody>
-  <% @jobs.each do |job| %>
-  <tr>
-    <td>
-      <%= link_to(job.title, job_path(job)) %>
-    </td>
-    <td>
-      <%= job.wage_lower_bound%>
-    </td>
-    <td>
-      <%= job.wage_upper_bound%>
-    </td>
-    <td>
-      <%= job.created_at%>
-    </td>
-    <td>
-      <%= job.created_at %>
-    </td>
-  </tr>
-  <% end %>
-</tbody>
-
-</table> -->
